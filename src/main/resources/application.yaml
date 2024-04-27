@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: payer
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: ${DB_URL}
+    username: ${UNAME}
+    password: ${DB_PWD}
+
+# razor payId of deepak sir.
+razorpay:
+  key:
+    id: rzp_test_uZ6Ak7HJGDfZoW
+    secret: lkZLET4sy96uzQlyxIhofRd1
